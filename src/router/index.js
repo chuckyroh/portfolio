@@ -9,10 +9,14 @@ const routes = [
 		path: '/',
 		name: 'home',
 		component: Home
-	}
+	},/* {
+		path: '/*',
+		component: FourOhFour
+	}*/
 ]
 
 const router = new VueRouter({
+	mode: 'history',
 	routes
 })
 
